@@ -1,0 +1,578 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>High Performance Input Pipelines for Scalable DL · Talks @ Rice</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Gabriel Vacaliuc">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex-plus/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../september/README.md" />
+    
+    
+    <link rel="prev" href="README.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="README.md">
+            
+                <span>
+            
+                    
+                    August, 2018
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="high-perf-input-pipelines-scalable-dl.html">
+            
+                <a href="high-perf-input-pipelines-scalable-dl.html">
+            
+                    
+                    High Performance Input Pipelines for Scalable DL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../september/README.md">
+            
+                <span>
+            
+                    
+                    September, 2018
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../september/differentially-private-change-point-detection.html">
+            
+                <a href="../september/differentially-private-change-point-detection.html">
+            
+                    
+                    Differentially Private Change Point Detection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../september/new-frontiers-in-imitation-learning.html">
+            
+                <a href="../september/new-frontiers-in-imitation-learning.html">
+            
+                    
+                    New Frontiers in Imitation Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../october/README.md">
+            
+                <span>
+            
+                    
+                    October, 2018
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../october/learning-to-search-retrospective-imitation.html">
+            
+                <a href="../october/learning-to-search-retrospective-imitation.html">
+            
+                    
+                    Learning to Search: Retrospective Imitation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../october/stochastic-geometry-wireless-network-modeling.html">
+            
+                <a href="../october/stochastic-geometry-wireless-network-modeling.html">
+            
+                    
+                    Wireless Network Modeling with Stochastic Geometry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../october/differentially-private-exp-graph-models.html">
+            
+                <a href="../october/differentially-private-exp-graph-models.html">
+            
+                    
+                    Differentially Private Graphical Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../october/bayesian-graphical-models-for-neuro-imaging.html">
+            
+                <a href="../october/bayesian-graphical-models-for-neuro-imaging.html">
+            
+                    
+                    Bayesian Graphical Models for Neuroimaging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../october/rethinking-ml-concepts-anastasios-kyrillidis.html">
+            
+                <a href="../october/rethinking-ml-concepts-anastasios-kyrillidis.html">
+            
+                    
+                    Rethinking some ML Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../october/stat-inference-for-building-theories-ilya-nemenram.html">
+            
+                <a href="../october/stat-inference-for-building-theories-ilya-nemenram.html">
+            
+                    
+                    Statistical Inference for Building Theories: Missing part of (Bio)physics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../october/understanding-patterns-of-mass-violence-patrick-ball.html">
+            
+                <a href="../october/understanding-patterns-of-mass-violence-patrick-ball.html">
+            
+                    
+                    Understanding Patterns of Mass Violence
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >High Performance Input Pipelines for Scalable DL</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="high-performance-input-pipelines-for-scalable-deep-learning">High Performance Input Pipelines for Scalable Deep Learning</h1>
+<p><strong>Speaker: Joshua Robinson, Pure Storage</strong></p>
+<h2 id="background-on-pure-storage">Background on Pure Storage</h2>
+<ul>
+<li>mass IOT created possibility for full flash / NAND storage, deprecating spinning disk</li>
+<li>transition from disk storage created new problems to solve</li>
+<li>&quot;data centric architecture simplifies everything&quot;</li>
+</ul>
+<h2 id="ml-use-case-load-performance-estimation">&quot;ML Use Case&quot;: Load performance estimation</h2>
+<ul>
+<li>customers want to know what will happen if they increase load on system</li>
+<li>no single metric that explains the &quot;load&quot; of a system</li>
+<li>data is collected on customer&apos;s devices, aggregated by purestorage</li>
+<li>approx. 1 trillion data points per day </li>
+<li>feature examples:<ul>
+<li>controller </li>
+<li>write/read bw</li>
+<li>read/write IO size</li>
+<li>flash array &quot;fullness&quot;</li>
+<li>avg. compression rate</li>
+</ul>
+</li>
+</ul>
+<h2 id="scaling-ai">&quot;Scaling&quot; AI</h2>
+<ul>
+<li>customer&apos;s want to deploy ML models</li>
+<li>&quot;storage is the most important part of your ML system&quot; - Joshua<ul>
+<li>actually data is, but all your data lives in storage!</li>
+</ul>
+</li>
+<li>10x data -&gt; halving error rate</li>
+</ul>
+<h3 id="ai-hype">AI Hype</h3>
+<ul>
+<li>&quot;AI&quot; has gone through several hype cycles</li>
+<li>falls from popularity when data / compute fail to keep up</li>
+<li>rises in popularity when new hardware / new data enables specific types of models </li>
+</ul>
+<h3 id="intuition-behind-deep-learning">intuition behind deep learning</h3>
+<ul>
+<li>classification<ul>
+<li>raw data -&gt; network -&gt; label</li>
+<li>gpus enabled fast convolution, fast linear algebra for dnns</li>
+</ul>
+</li>
+<li>regression<ul>
+<li>raw data -&gt; network -&gt; number</li>
+</ul>
+</li>
+<li>training = backprop = linear algebra</li>
+</ul>
+<h3 id="scaling">scaling</h3>
+<ul>
+<li>what happens when you go from 1 gpu to n gpus?</li>
+<li>spread batches across gpus, merge gradients, update weights</li>
+<li>how to get batch data to gpus?<ul>
+<li>data bottleneck with massive online training + traditional data storage 
+techniques</li>
+</ul>
+</li>
+</ul>
+<h3 id="going-from-image-data-to-tensor-data">going from image data to tensor data</h3>
+<ol>
+<li>enumerate and shuffle data</li>
+<li>augment data online</li>
+<li>copy to gpu</li>
+</ol>
+<p>With fast and enough gpus, data ingestion can be a bottleneck.  Any one of these
+steps may be!</p>
+<h3 id="benchmarks">benchmarks</h3>
+<p>Hardware Stack:</p>
+<ul>
+<li>Pure Storage flash (180 TB usable storage)</li>
+<li>Some Rack Server</li>
+<li>4 Nvidia DGX-1s</li>
+</ul>
+<p>Software:  </p>
+<ul>
+<li>tensorflow</li>
+<li>horovod to train across multiple gpus</li>
+<li>dgx-os on nvidia workstatiosn</li>
+</ul>
+<p>Testing on a single GPU:  </p>
+<ul>
+<li>216 images / sec with Inception v3.</li>
+<li>228 images / sec upper bound performance<ul>
+<li>generated random data on the fly</li>
+</ul>
+</li>
+<li>225 images / sec with prefetch queue<ul>
+<li>added a queue with pre-fetched / pre-populated data, </li>
+</ul>
+</li>
+</ul>
+<p>Testing on 32 GPUS (4 DGX-1s):  </p>
+<ul>
+<li>4143 images / sec, naive Inception v3.</li>
+<li>7200 iages / sec, linear speedup.</li>
+<li>6580 images / sec, synthetic data</li>
+<li>5335 images / sec, + prefetch queue</li>
+<li>6440 images / sec, + prefetch queue - data augmentation<ul>
+<li>note that data augmentation was performed in the CPU</li>
+</ul>
+</li>
+</ul>
+<p>Insights / Takeaways:  </p>
+<ul>
+<li>TF scheduler is complex and struggles to handle these complex operations</li>
+<li>bottleneck in CPU data augmentation</li>
+<li>took very specific optimizations to images to reach &quot;theoretical upper limit&quot;</li>
+<li>need to </li>
+</ul>
+<h2 id="ps-phd-after-rice">P.S. PhD after Rice</h2>
+<ul>
+<li>Cybersecurity Startup, R&amp;D prototyping<ul>
+<li>felt a lack of impact</li>
+<li>company had no intention of implementing prototypes</li>
+</ul>
+</li>
+<li>Google, Search Infra Team<ul>
+<li>&quot;production ML&quot;</li>
+<li>steered search alg., deciding whether to index pages </li>
+<li>1000+ engineers on search team</li>
+<li>many many engineers working on &quot;PhD Hard&quot; problems</li>
+<li>PhD is great preparation for work in industry</li>
+</ul>
+</li>
+<li>Pure Storage, SWE<ul>
+<li>left google to work at startup, wanted to see an idea go from whiteboard to
+product</li>
+<li>product seemed difficult and challenging</li>
+</ul>
+</li>
+<li>Pure Storage, ?<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<h4 id="overall-thoughts">Overall thoughts</h4>
+<ul>
+<li>if you&apos;re interested in industry, go to silicon valley</li>
+<li>the types of jobs needing genuine research skills are much more widespread
+than expected</li>
+<li>bay area is very far ahead of the rest of the world </li>
+</ul>
+<h3 id="questions">Questions</h3>
+<ul>
+<li>Why did you go to Pure Storage?<ul>
+<li>If we can build it, people will buy it</li>
+<li>I don&apos;t think we can build it, but I&apos;m down to try</li>
+<li>deep tech, not marketing</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="README.md" class="navigation navigation-prev " aria-label="Previous page: August, 2018">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../september/README.md" class="navigation navigation-next " aria-label="Next page: September, 2018">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"High Performance Input Pipelines for Scalable DL","level":"1.2.1","depth":2,"next":{"title":"September, 2018","level":"1.3","depth":1,"path":"2018/september/README.md","ref":"./2018/september/README.md","articles":[{"title":"Differentially Private Change Point Detection","level":"1.3.1","depth":2,"path":"2018/september/differentially-private-change-point-detection.md","ref":"./2018/september/differentially-private-change-point-detection.md","articles":[]},{"title":"New Frontiers in Imitation Learning","level":"1.3.2","depth":2,"path":"2018/september/new-frontiers-in-imitation-learning.md","ref":"./2018/september/new-frontiers-in-imitation-learning.md","articles":[]}]},"previous":{"title":"August, 2018","level":"1.2","depth":1,"path":"2018/august/README.md","ref":"./2018/august/README.md","articles":[{"title":"High Performance Input Pipelines for Scalable DL","level":"1.2.1","depth":2,"path":"2018/august/high-perf-input-pipelines-scalable-dl.md","ref":"./2018/august/high-perf-input-pipelines-scalable-dl.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex-plus","edit-link","embed-pdf","underline"],"root":"src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"underline":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"katex-plus":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"edit","base":"https://github.com/rice-notes/talks/tree/master/src"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"embed-pdf":{}},"theme":"default","author":"Gabriel Vacaliuc","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Talks @ Rice","gitbook":"*","description":"Notes from miscellaneous talks at Rice."},"file":{"path":"2018/august/high-perf-input-pipelines-scalable-dl.md","mtime":"2018-10-25T23:57:52.645Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-25T23:59:20.371Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
