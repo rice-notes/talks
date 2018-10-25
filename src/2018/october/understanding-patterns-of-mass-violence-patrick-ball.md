@@ -92,3 +92,8 @@ used in Oakland?**
 **given that predictive policing is so bad, why are we trying to do it?**
 
     "unholy marriage of selection bias and confirmation bias" 
+
+## misc:
+
+I thought of [this article](https://blog.godatadriven.com/fairness-in-ml) when
+we began discussing the bias on predictive policing.
