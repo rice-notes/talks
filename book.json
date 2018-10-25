@@ -1,0 +1,18 @@
+{
+    "root": "src",
+    "title": "Talks @ Rice",
+    "description": "Notes from miscellaneous talks at Rice.",
+    "author": "Gabriel Vacaliuc",
+    "plugins": [
+        "katex-plus",
+        "edit-link",
+        "embed-pdf",
+        "underline"
+    ],
+    "pluginsConfig": {
+        "edit-link": {
+          "base": "https://github.com/rice-notes/talks/tree/master/src",
+          "label": "edit"
+        }
+    }
+}

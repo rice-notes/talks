@@ -1,0 +1,16 @@
+# Summary
+
+* [Introduction](./README.md)
+* [August, 2018](./2018/august/README.md)
+    * [High Performance Input Pipelines for Scalable DL](./2018/august/high-perf-input-pipelines-scalable-dl.md)
+* [September, 2018](./2018/september/README.md)
+    * [Differentially Private Change Point Detection](./2018/september/differentially-private-change-point-detection.md)
+    * [New Frontiers in Imitation Learning](./2018/september/new-frontiers-in-imitation-learning.md)
+* [October, 2018](./2018/october/README.md)
+    * [Learning to Search: Retrospective Imitation](./2018/october/learning-to-search-retrospective-imitation.md)
+    * [Wireless Network Modeling with Stochastic Geometry](./2018/october/stochastic-geometry-wireless-network-modeling.md)
+    * [Differentially Private Graphical Models](./2018/october/differentially-private-exp-graph-models.md)
+    * [Bayesian Graphical Models for Neuroimaging](./2018/october/bayesian-graphical-models-for-neuro-imaging.md)
+    * [Rethinking some ML Concepts](./2018/october/rethinking-ml-concepts-anastasios-kyrillidis.md)
+    * [Statistical Inference for Building Theories: Missing part of (Bio)physics](./2018/october/stat-inference-for-building-theories-ilya-nemenram.md)
+    * [Understanding Patterns of Mass Violence](./2018/october/understanding-patterns-of-mass-violence-patrick-ball.md)
