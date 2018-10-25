@@ -1,7 +1,8 @@
 # Understanding Patterns of Mass Violence w/ Data and Science
 
-Patrick Ball: Human Rights Data Analysis Group
-Twitter Handles: @vm_wylbur, @hrdag
+Patrick Ball: Human Rights Data Analysis Group  
+Twitter Handles: [@vm_wylbur](https://twitter.com/vm_wylbur),
+[@hrdag](https://twitter.com/hrdag)
 
 ## mass violence / oppression
 
@@ -27,7 +28,7 @@ the data:
   president's regime
 
 each report:  
-* # of patients at BoD / EoD
+* \# of patients at BoD / EoD
 * any significant events that happened at the prison
 * looking at # of deaths / # of people @ the prison gives crude mortality rate
 
@@ -38,8 +39,7 @@ conclusions:
 
 effect on the court:  
 * this quantative evidence really aided in the court, since qualitative
-  evidence can be very misconstrued
-* 
+  evidence can often be misconstrued
 
 ## the tricky bit of missing data
 
@@ -53,7 +53,7 @@ most often the issue with human rights is that we don't know what we don't know
 * **which means** that events with only a few killings might not have been
   reported on at all!
 
-does this matter?:  
+**does this sampling bias matter?:**  
 * small killings
     * made by shi'a militants
     * made with firearms
@@ -63,10 +63,12 @@ does this matter?:
     * airstrikes / bombings
     * goal: destabilizing / territory control
 
-meaning:  we were chiefly focused on the killings made by AQI, but we may have
-completely missed where most of the deaths were coming from in Iraq.  In fact,
-this ethnic cleansing pushed sunni muslims west and may have contributed to the
-rise of ISIS.
+#### meaning:  
+
+We were chiefly focused on the killings made by AQI, but we may have completely
+missed where most of the deaths were coming from in Iraq.  In fact, this ethnic
+cleansing pushed sunni muslims west and *may* have contributed to the rise of
+ISIS.
 
 ## predictive policing
 
@@ -81,12 +83,12 @@ actual:
 
 ## Q/A:
 
-*Did you have any data on the geo-spatial distribution of which drugs were used
-in Oakland?*
+**Did you have any data on the geo-spatial distribution of which drugs were
+used in Oakland?**
 
-arrests primarily for meth, heroine, and marijuana, there's definitely a
-difference in the distribution, but it doesn't really change our conclusion
+    arrests primarily for meth, heroine, and marijuana, there's definitely a
+    difference in the distribution, but it doesn't really change our conclusion
 
-*given that predictive policing is so bad, why are we doing it?*
+**given that predictive policing is so bad, why are we trying to do it?**
 
-"unholy marriage of selection bias and confirmation bias" 
+    "unholy marriage of selection bias and confirmation bias" 
